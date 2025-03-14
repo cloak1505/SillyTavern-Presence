@@ -417,7 +417,7 @@ SlashCommandParser.addCommandObject(
 				enumProvider: commonEnumProviders.characters("all"),
 			}),
 		],
-		helpString: "Wipes the memory of a character. Usage /presenceForget <name>",
+		helpString: "Wipes the memory of a character. Usage: /presenceForget char_name",
 	})
 );
 
@@ -441,7 +441,7 @@ SlashCommandParser.addCommandObject(
 				enumProvider: commonEnumProviders.characters("all"),
 			}),
 		],
-		helpString: "Adds all messages to the memory of a character. Usage /presenceRememberAll <name>",
+		helpString: "Adds all messages to the memory of a character. Usage: /presenceRememberAll char_name",
 	})
 );
 
@@ -452,7 +452,7 @@ SlashCommandParser.addCommandObject(
 			await commandForceAllPresent(args);
 			return "";
 		},
-		helpString: "Makes all characters remember EVERYTHING. Usage /presenceForceAllPresent <name>",
+		helpString: "Makes all characters remember EVERYTHING.",
 	})
 );
 
@@ -463,7 +463,7 @@ SlashCommandParser.addCommandObject(
 			await commandForceNonePresent(args);
 			return "";
 		},
-		helpString: "Makes all characters remember EVERYTHING. Usage /presenceForceNonePresent <name>",
+		helpString: "Makes all characters forget EVERYTHING.",
 	})
 );
 
